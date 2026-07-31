@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>3D Notes</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>NOT3S</h1>
+    <p>A simple 3D notebook made with Three.js</p>
+  </header>
+
+  <div id="controls">
+    <button id="previousPage">Previous</button>
+    <button id="newPage">New Page</button>
+    <button id="nextPage">Next</button>
+  </div>
+
+  <div id="scene"></div>
+
+  <textarea id="hiddenInput"></textarea>
+
+  <script
+    async
+    src="https://unpkg.com/es-module-shims@1.10.0/dist/es-module-shims.js">
+  </script>
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.179.1/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.179.1/examples/jsm/"
+      }
+    }
+  </script>
+
+  <script type="module" src="script.js"></script>
+
+</body>
+
+</html>
